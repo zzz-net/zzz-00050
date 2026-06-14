@@ -20,9 +20,9 @@ npm install
 npm run dev
 ```
 
-- 前端地址: http://localhost:5173
-- 后端地址: http://localhost:3000
-- 健康检查: http://localhost:3000/api/health
+- 前端地址: http://localhost:5173 (如被占用会自动切换到 5174 等)
+- 后端地址: http://localhost:3002
+- 健康检查: http://localhost:3002/api/health
 
 ### 构建生产版本
 

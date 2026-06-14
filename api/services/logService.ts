@@ -19,7 +19,7 @@ export function addLog(userId: number, userName: string, action: string, ticketI
 
 export function getLogs(options?: { userId?: number; ticketId?: number; action?: string; limit?: number; offset?: number }) {
   const db = getDb();
-  let logs = [...db.logs];
+  let logs = [...db.logs].sort((a, b) => b.id - a.id);
   if (options?.userId) {
     logs = logs.filter(l => l.userId === options.userId);
   }

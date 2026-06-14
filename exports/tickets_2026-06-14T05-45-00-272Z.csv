@@ -1,0 +1,15 @@
+﻿工单ID,标题,类别,地址,描述,状态,报修人,调度员,维修人员,退回原因,处理结果,创建时间,更新时间
+14,ConflictTest Ticket,water,test-address-conflict,For optimistic lock test,已派工,张三,赵调度,陈师傅,,,2026-06-14T05:41:28.848Z,2026-06-14T05:41:28.909Z
+13,CloseTest,water,testaddr,test,已派工,张三,王调度,陈师傅,,,2026-06-14T05:41:28.611Z,2026-06-14T05:41:28.710Z
+12,Hall light flickers,water,Building2 Unit3 floor3 east side,Light is unstable,待派工,张三,王调度,,,,2026-06-14T05:41:28.139Z,2026-06-14T05:41:28.419Z
+11,Kitchen faucet leaking,water,Building3 Unit2 Room 201,Faucet keeps dripping under sink,待派工,张三,王调度,陈师傅,,,2026-06-14T05:41:27.385Z,2026-06-14T05:41:29.230Z
+10,ConflictTest Ticket,water,test-address-conflict,For optimistic lock test,已派工,张三,赵调度,陈师傅,,,2026-06-14T05:32:47.731Z,2026-06-14T05:32:47.843Z
+9,CloseTest,water,testaddr,test,已派工,张三,王调度,陈师傅,,,2026-06-14T05:32:47.535Z,2026-06-14T05:32:47.634Z
+8,Hall light flickers,water,Building2 Unit3 floor3 east side,Light is unstable,待派工,张三,王调度,,,,2026-06-14T05:32:47.121Z,2026-06-14T05:32:47.399Z
+7,Kitchen faucet leaking,water,Building3 Unit2 Room 201,Faucet keeps dripping under sink,待派工,张三,王调度,陈师傅,,,2026-06-14T05:32:46.329Z,2026-06-14T05:32:48.062Z
+6,ConflictTest,水电维修,6号楼1单元202,,已派工,张三,王调度,陈师傅,,,2026-06-14T04:52:43.860Z,2026-06-14T04:52:43.879Z
+5,CloseTest,设备故障,test addr,,已派工,张三,王调度,陈师傅,,,2026-06-14T04:52:33.274Z,2026-06-14T04:52:33.287Z
+4,门铃坏了,设备故障,5号楼1单元101,按门铃无反应,待派工,张三,王调度,陈师傅,,,2026-06-14T04:52:05.247Z,2026-06-14T04:52:43.894Z
+1,楼道灯不亮（已补充）,水电维修,1号楼3单元2层楼道,灯坏了3天，已确认是灯泡问题,待派工,张三,王调度,,,,2026-06-13T04:27:42.499Z,2026-06-14T04:53:39.230Z
+2,水管漏水,水电维修,2号楼1单元501室,厨房水管接口处漏水，需要紧急处理,已派工,李四,王调度,陈师傅,,,2026-06-12T04:27:42.499Z,2026-06-13T04:27:42.499Z
+3,电梯故障,设备故障,3号楼2单元,电梯按钮全部失灵，无法使用,已关闭,张三,王调度,刘师傅,,已更换电梯控制面板，恢复正常使用,2026-06-11T04:27:42.499Z,2026-06-13T16:27:42.499Z
