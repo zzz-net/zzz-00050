@@ -1,0 +1,340 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "resident1",
+      "passwordHash": "hash_56760663_6",
+      "name": "张三",
+      "role": "resident",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 2,
+      "username": "resident2",
+      "passwordHash": "hash_56760663_6",
+      "name": "李四",
+      "role": "resident",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 3,
+      "username": "dispatcher1",
+      "passwordHash": "hash_56760663_6",
+      "name": "王调度",
+      "role": "dispatcher",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 4,
+      "username": "dispatcher2",
+      "passwordHash": "hash_56760663_6",
+      "name": "赵调度",
+      "role": "dispatcher",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 5,
+      "username": "repair1",
+      "passwordHash": "hash_56760663_6",
+      "name": "陈师傅",
+      "role": "repair",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 6,
+      "username": "repair2",
+      "passwordHash": "hash_56760663_6",
+      "name": "刘师傅",
+      "role": "repair",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    },
+    {
+      "id": 7,
+      "username": "admin",
+      "passwordHash": "hash_56760663_6",
+      "name": "系统管理员",
+      "role": "admin",
+      "createdAt": "2026-06-14T04:27:42.498Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 6,
+      "title": "ConflictTest",
+      "category": "水电维修",
+      "address": "6号楼1单元202",
+      "description": "",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T04:52:43.860Z",
+      "updatedAt": "2026-06-14T04:52:43.879Z",
+      "version": 2,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 5,
+      "title": "CloseTest",
+      "category": "设备故障",
+      "address": "test addr",
+      "description": "",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T04:52:33.274Z",
+      "updatedAt": "2026-06-14T04:52:33.287Z",
+      "version": 2,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 4,
+      "title": "门铃坏了",
+      "category": "设备故障",
+      "address": "5号楼1单元101",
+      "description": "按门铃无反应",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T04:52:05.247Z",
+      "updatedAt": "2026-06-14T04:52:43.894Z",
+      "version": 5,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 1,
+      "title": "楼道灯不亮（已补充）",
+      "category": "水电维修",
+      "address": "1号楼3单元2层楼道",
+      "description": "灯坏了3天，已确认是灯泡问题",
+      "status": "pending",
+      "residentId": 1,
+      "residentName": "张三",
+      "createdAt": "2026-06-13T04:27:42.499Z",
+      "updatedAt": "2026-06-14T04:53:39.230Z",
+      "version": 3,
+      "dispatcherId": 3
+    },
+    {
+      "id": 2,
+      "title": "水管漏水",
+      "category": "水电维修",
+      "address": "2号楼1单元501室",
+      "description": "厨房水管接口处漏水，需要紧急处理",
+      "status": "assigned",
+      "residentId": 2,
+      "residentName": "李四",
+      "dispatcherId": 3,
+      "dispatcherName": "王调度",
+      "repairId": 5,
+      "repairName": "陈师傅",
+      "createdAt": "2026-06-12T04:27:42.499Z",
+      "updatedAt": "2026-06-13T04:27:42.499Z",
+      "version": 2
+    },
+    {
+      "id": 3,
+      "title": "电梯故障",
+      "category": "设备故障",
+      "address": "3号楼2单元",
+      "description": "电梯按钮全部失灵，无法使用",
+      "status": "closed",
+      "residentId": 1,
+      "residentName": "张三",
+      "dispatcherId": 3,
+      "dispatcherName": "王调度",
+      "repairId": 6,
+      "repairName": "刘师傅",
+      "processResult": "已更换电梯控制面板，恢复正常使用",
+      "createdAt": "2026-06-11T04:27:42.499Z",
+      "updatedAt": "2026-06-13T16:27:42.499Z",
+      "version": 4
+    }
+  ],
+  "logs": [
+    {
+      "id": 18,
+      "userId": 1,
+      "userName": "张三",
+      "action": "resubmit_ticket",
+      "ticketId": 1,
+      "detail": "补充信息后重新提交",
+      "createdAt": "2026-06-14T04:53:39.230Z"
+    },
+    {
+      "id": 17,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "return_ticket",
+      "ticketId": 1,
+      "detail": "退回原因：地址不够详细，请补充具体单元号",
+      "createdAt": "2026-06-14T04:53:39.200Z"
+    },
+    {
+      "id": 16,
+      "userId": 7,
+      "userName": "系统管理员",
+      "action": "reopen_ticket",
+      "ticketId": 4,
+      "detail": "管理员重开工单",
+      "createdAt": "2026-06-14T04:52:43.894Z"
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 6,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T04:52:43.879Z"
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 6,
+      "detail": "提交报修：ConflictTest",
+      "createdAt": "2026-06-14T04:52:43.860Z"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 5,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T04:52:33.287Z"
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 5,
+      "detail": "提交报修：CloseTest",
+      "createdAt": "2026-06-14T04:52:33.274Z"
+    },
+    {
+      "id": 11,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "close_ticket",
+      "ticketId": 4,
+      "detail": "工单处理完成，已关闭",
+      "createdAt": "2026-06-14T04:52:16.604Z"
+    },
+    {
+      "id": 10,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "process_ticket",
+      "ticketId": 4,
+      "detail": "填写处理结果",
+      "createdAt": "2026-06-14T04:52:16.596Z"
+    },
+    {
+      "id": 9,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "start_process",
+      "ticketId": 4,
+      "detail": "开始处理工单",
+      "createdAt": "2026-06-14T04:52:16.596Z"
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 4,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T04:52:10.893Z"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 4,
+      "detail": "提交报修：门铃坏了",
+      "createdAt": "2026-06-14T04:52:05.248Z"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 1,
+      "detail": "提交报修：楼道灯不亮",
+      "createdAt": "2026-06-13T04:27:42.499Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "userName": "李四",
+      "action": "create_ticket",
+      "ticketId": 2,
+      "detail": "提交报修：水管漏水",
+      "createdAt": "2026-06-12T04:27:42.499Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 2,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-13T04:27:42.499Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 3,
+      "detail": "提交报修：电梯故障",
+      "createdAt": "2026-06-11T04:27:42.499Z"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 3,
+      "detail": "派工给刘师傅",
+      "createdAt": "2026-06-11T20:54:22.499Z"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "userName": "刘师傅",
+      "action": "close_ticket",
+      "ticketId": 3,
+      "detail": "处理完成并关闭工单",
+      "createdAt": "2026-06-13T16:27:42.499Z"
+    }
+  ],
+  "nextUserId": 8,
+  "nextTicketId": 7,
+  "nextLogId": 19,
+  "tokens": {
+    "tk_6a5ltkc7p9cmqdaxxcu": 1,
+    "tk_8vxgokvi0psmqdb53vm": 1,
+    "tk_yevgh70wbtmqdb5882": 3,
+    "tk_tgpyb0u7nlbmqdb5cmm": 5,
+    "tk_ju5z8xnvuqmqdb5idr": 1,
+    "tk_hp1c78xidkwmqdb5phn": 1,
+    "tk_7537jnrquvsmqdb5pit": 5,
+    "tk_hl6ozgjesxmqdb5pj6": 3,
+    "tk_9wgr29qggwmqdb5xof": 1,
+    "tk_xpr8cjl8tthmqdb5xpb": 3,
+    "tk_bslkueqgr1emqdb5xpf": 4,
+    "tk_mrhsi1t22xmqdb5xpu": 7,
+    "tk_ck1dw3bxgdrmqdb62cx": 7,
+    "tk_gvaw0u6p2bmqdb67sb": 7,
+    "tk_h1395lvwrcnmqdb6v8h": 7,
+    "tk_n13lfr36ssamqdb74dl": 3,
+    "tk_6b6c9fj9vo4mqdb74en": 5,
+    "tk_viv5ya683qnmqdb74ex": 1
+  }
+}

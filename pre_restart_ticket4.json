@@ -1,0 +1,1 @@
+{"success":true,"data":{"id":4,"title":"门铃坏了","category":"设备故障","address":"5号楼1单元101","description":"按门铃无反应","status":"pending","residentId":1,"createdAt":"2026-06-14T04:52:05.247Z","updatedAt":"2026-06-14T04:52:43.894Z","version":5,"dispatcherId":3,"repairId":5,"residentName":"张三","dispatcherName":"王调度","repairName":"陈师傅"}}
