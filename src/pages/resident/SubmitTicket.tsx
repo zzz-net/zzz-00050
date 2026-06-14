@@ -34,9 +34,16 @@ export default function SubmitTicket() {
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
 
   const autoSaveRef = useRef<NodeJS.Timeout | null>(null);
+  const hasPromptedRef = useRef(false);
+  const formDirtyRef = useRef(false);
 
   useEffect(() => {
     loadDrafts();
+  }, [loadDrafts]);
+
+  useEffect(() => {
+    if (hasPromptedRef.current) return;
+    if (formDirtyRef.current) return;
     const state = location.state as { draft?: DraftTicket } | null;
     if (state?.draft) {
       setTitle(state.draft.title);
@@ -45,11 +52,19 @@ export default function SubmitTicket() {
       setDescription(state.draft.description);
       setAlert({ type: 'info', message: '已恢复草稿内容' });
       setTimeout(() => setAlert(null), 3000);
+      hasPromptedRef.current = true;
     } else if (drafts.length > 0) {
       setPendingDraft(drafts[0]);
       setDraftModalOpen(true);
+      hasPromptedRef.current = true;
     }
-  }, []);
+  }, [drafts, location.state]);
+
+  useEffect(() => {
+    if (title || category || address || description) {
+      formDirtyRef.current = true;
+    }
+  }, [title, category, address, description]);
 
   useEffect(() => {
     if (autoSaveRef.current) {

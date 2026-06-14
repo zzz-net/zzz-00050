@@ -59,6 +59,128 @@
   ],
   "tickets": [
     {
+      "id": 33,
+      "title": "CurlConflict Ticket",
+      "category": "water",
+      "address": "test-addr-curl-conflict",
+      "description": "For optimistic lock test via curl",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T06:20:12.976Z",
+      "updatedAt": "2026-06-14T06:20:13.012Z",
+      "version": 2,
+      "dispatcherId": 4,
+      "repairId": 5
+    },
+    {
+      "id": 32,
+      "title": "CloseTest",
+      "category": "water",
+      "address": "testaddr",
+      "description": "test",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T06:20:12.874Z",
+      "updatedAt": "2026-06-14T06:20:12.907Z",
+      "version": 2,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 31,
+      "title": "Hall light flickers",
+      "category": "electric",
+      "address": "Building2 Unit3 floor3 east side",
+      "description": "Light is unstable",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T06:20:12.709Z",
+      "updatedAt": "2026-06-14T06:20:12.807Z",
+      "version": 3,
+      "dispatcherId": 3
+    },
+    {
+      "id": 30,
+      "title": "Kitchen faucet leaking",
+      "category": "water",
+      "address": "Building3 Unit2 Room 201",
+      "description": "Faucet keeps dripping under sink",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T06:20:12.457Z",
+      "updatedAt": "2026-06-14T06:20:13.145Z",
+      "version": 5,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 29,
+      "title": "CurlConflict Ticket",
+      "category": "water",
+      "address": "test-addr-curl-conflict",
+      "description": "For optimistic lock test via curl",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T05:57:21.087Z",
+      "updatedAt": "2026-06-14T05:57:21.155Z",
+      "version": 2,
+      "dispatcherId": 4,
+      "repairId": 5
+    },
+    {
+      "id": 28,
+      "title": "CloseTest",
+      "category": "water",
+      "address": "testaddr",
+      "description": "test",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T05:57:20.906Z",
+      "updatedAt": "2026-06-14T05:57:20.965Z",
+      "version": 2,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 27,
+      "title": "Hall light flickers",
+      "category": "electric",
+      "address": "Building2 Unit3 floor3 east side",
+      "description": "Light is unstable",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T05:57:20.567Z",
+      "updatedAt": "2026-06-14T05:57:20.783Z",
+      "version": 3,
+      "dispatcherId": 3
+    },
+    {
+      "id": 26,
+      "title": "Kitchen faucet leaking",
+      "category": "water",
+      "address": "Building3 Unit2 Room 201",
+      "description": "Faucet keeps dripping under sink",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T05:57:20.091Z",
+      "updatedAt": "2026-06-14T05:57:21.372Z",
+      "version": 5,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 25,
+      "title": "CurlConflictTest",
+      "category": "water",
+      "address": "addr-curl-conflict",
+      "description": "test",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T05:55:43.032Z",
+      "updatedAt": "2026-06-14T05:55:43.032Z",
+      "version": 1
+    },
+    {
       "id": 24,
       "title": "409 Body Test",
       "category": "water",
@@ -399,6 +521,249 @@
     }
   ],
   "logs": [
+    {
+      "id": 101,
+      "userId": 7,
+      "userName": "系统管理员",
+      "action": "reopen_ticket",
+      "ticketId": 30,
+      "detail": "管理员重开工单",
+      "createdAt": "2026-06-14T06:20:13.145Z"
+    },
+    {
+      "id": 100,
+      "userId": 4,
+      "userName": "赵调度",
+      "action": "assign_ticket",
+      "ticketId": 33,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T06:20:13.012Z"
+    },
+    {
+      "id": 99,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 33,
+      "detail": "提交报修：CurlConflict Ticket",
+      "createdAt": "2026-06-14T06:20:12.976Z"
+    },
+    {
+      "id": 98,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 32,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T06:20:12.907Z"
+    },
+    {
+      "id": 97,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 32,
+      "detail": "提交报修：CloseTest",
+      "createdAt": "2026-06-14T06:20:12.874Z"
+    },
+    {
+      "id": 96,
+      "userId": 1,
+      "userName": "张三",
+      "action": "resubmit_ticket",
+      "ticketId": 31,
+      "detail": "补充信息后重新提交",
+      "createdAt": "2026-06-14T06:20:12.807Z"
+    },
+    {
+      "id": 95,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "return_ticket",
+      "ticketId": 31,
+      "detail": "退回原因：Missing unit number, please specify exact location",
+      "createdAt": "2026-06-14T06:20:12.741Z"
+    },
+    {
+      "id": 94,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 31,
+      "detail": "提交报修：Hall light flickers",
+      "createdAt": "2026-06-14T06:20:12.709Z"
+    },
+    {
+      "id": 93,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "close_ticket",
+      "ticketId": 30,
+      "detail": "工单处理完成，已关闭",
+      "createdAt": "2026-06-14T06:20:12.634Z"
+    },
+    {
+      "id": 92,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "process_ticket",
+      "ticketId": 30,
+      "detail": "填写处理结果",
+      "createdAt": "2026-06-14T06:20:12.603Z"
+    },
+    {
+      "id": 91,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "start_process",
+      "ticketId": 30,
+      "detail": "开始处理工单",
+      "createdAt": "2026-06-14T06:20:12.603Z"
+    },
+    {
+      "id": 90,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 30,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T06:20:12.536Z"
+    },
+    {
+      "id": 89,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 30,
+      "detail": "提交报修：Kitchen faucet leaking",
+      "createdAt": "2026-06-14T06:20:12.457Z"
+    },
+    {
+      "id": 88,
+      "userId": 7,
+      "userName": "系统管理员",
+      "action": "reopen_ticket",
+      "ticketId": 26,
+      "detail": "管理员重开工单",
+      "createdAt": "2026-06-14T05:57:21.372Z"
+    },
+    {
+      "id": 87,
+      "userId": 4,
+      "userName": "赵调度",
+      "action": "assign_ticket",
+      "ticketId": 29,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T05:57:21.155Z"
+    },
+    {
+      "id": 86,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 29,
+      "detail": "提交报修：CurlConflict Ticket",
+      "createdAt": "2026-06-14T05:57:21.087Z"
+    },
+    {
+      "id": 85,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 28,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T05:57:20.965Z"
+    },
+    {
+      "id": 84,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 28,
+      "detail": "提交报修：CloseTest",
+      "createdAt": "2026-06-14T05:57:20.906Z"
+    },
+    {
+      "id": 83,
+      "userId": 1,
+      "userName": "张三",
+      "action": "resubmit_ticket",
+      "ticketId": 27,
+      "detail": "补充信息后重新提交",
+      "createdAt": "2026-06-14T05:57:20.783Z"
+    },
+    {
+      "id": 82,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "return_ticket",
+      "ticketId": 27,
+      "detail": "退回原因：Missing unit number, please specify exact location",
+      "createdAt": "2026-06-14T05:57:20.630Z"
+    },
+    {
+      "id": 81,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 27,
+      "detail": "提交报修：Hall light flickers",
+      "createdAt": "2026-06-14T05:57:20.568Z"
+    },
+    {
+      "id": 80,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "close_ticket",
+      "ticketId": 26,
+      "detail": "工单处理完成，已关闭",
+      "createdAt": "2026-06-14T05:57:20.411Z"
+    },
+    {
+      "id": 79,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "process_ticket",
+      "ticketId": 26,
+      "detail": "填写处理结果",
+      "createdAt": "2026-06-14T05:57:20.351Z"
+    },
+    {
+      "id": 78,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "start_process",
+      "ticketId": 26,
+      "detail": "开始处理工单",
+      "createdAt": "2026-06-14T05:57:20.351Z"
+    },
+    {
+      "id": 77,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 26,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T05:57:20.231Z"
+    },
+    {
+      "id": 76,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 26,
+      "detail": "提交报修：Kitchen faucet leaking",
+      "createdAt": "2026-06-14T05:57:20.092Z"
+    },
+    {
+      "id": 75,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 25,
+      "detail": "提交报修：CurlConflictTest",
+      "createdAt": "2026-06-14T05:55:43.032Z"
+    },
     {
       "id": 74,
       "userId": 4,
@@ -1067,8 +1432,8 @@
     }
   ],
   "nextUserId": 8,
-  "nextTicketId": 25,
-  "nextLogId": 75,
+  "nextTicketId": 34,
+  "nextLogId": 102,
   "tokens": {
     "tk_6a5ltkc7p9cmqdaxxcu": 1,
     "tk_8vxgokvi0psmqdb53vm": 1,
@@ -1116,6 +1481,22 @@
     "tk_66akoxvzht3mqdd7b4n": 4,
     "tk_nw9spj5gljmqdd7i4v": 1,
     "tk_p2i3g93zn1mqdd7i5r": 4,
-    "tk_fn8gzkzifmmqdd7i5w": 3
+    "tk_fn8gzkzifmmqdd7i5w": 3,
+    "tk_44u3pi2q3gqmqddex3u": 1,
+    "tk_t2vi70dgw9mqddexbt": 3,
+    "tk_y3fnlpaxuqamqddexn5": 4,
+    "tk_fj1dtrwaendmqddgzze": 1,
+    "tk_xuktik0t8cmqddh01p": 3,
+    "tk_a8yavjjxqanmqddh03j": 4,
+    "tk_agqdvc4kpo6mqddh05a": 5,
+    "tk_23ewuewnslamqddh076": 7,
+    "tk_ztpsylpxncbmqddkgk7": 1,
+    "tk_sn3876x448mmqde3t3s": 7,
+    "tk_9in6msih8oqmqdeaf7b": 1,
+    "tk_4vrajd96ef4mqdeaf8j": 3,
+    "tk_mmhi3xgf1amqdeaf9f": 4,
+    "tk_dyqkuc5xb08mqdeafae": 5,
+    "tk_kjion16ohqlmqdeafbe": 7,
+    "tk_qgwbql1jytbmqdeb98d": 7
   }
 }
