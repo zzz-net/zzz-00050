@@ -59,6 +59,34 @@
   ],
   "tickets": [
     {
+      "id": 64,
+      "title": "concurrency-1781447564778",
+      "category": "其他",
+      "address": "并发地址",
+      "description": "并发验证",
+      "status": "assigned",
+      "residentId": 1,
+      "createdAt": "2026-06-14T14:32:44.780Z",
+      "updatedAt": "2026-06-14T14:32:44.784Z",
+      "version": 2,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
+      "id": 63,
+      "title": "review-1781447361402",
+      "category": "设备故障",
+      "address": "9号楼9单元909",
+      "description": "review flow",
+      "status": "pending",
+      "residentId": 1,
+      "createdAt": "2026-06-14T14:29:21.404Z",
+      "updatedAt": "2026-06-14T14:29:21.427Z",
+      "version": 5,
+      "dispatcherId": 3,
+      "repairId": 5
+    },
+    {
       "id": 62,
       "title": "Reviewer conflict ticket 2210",
       "category": "water",
@@ -920,6 +948,78 @@
     }
   ],
   "logs": [
+    {
+      "id": 202,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 64,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T14:32:44.784Z"
+    },
+    {
+      "id": 201,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 64,
+      "detail": "提交报修：concurrency-1781447564778",
+      "createdAt": "2026-06-14T14:32:44.780Z"
+    },
+    {
+      "id": 200,
+      "userId": 7,
+      "userName": "系统管理员",
+      "action": "reopen_ticket",
+      "ticketId": 63,
+      "detail": "管理员重开工单",
+      "createdAt": "2026-06-14T14:29:21.427Z"
+    },
+    {
+      "id": 199,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "close_ticket",
+      "ticketId": 63,
+      "detail": "工单处理完成，已关闭",
+      "createdAt": "2026-06-14T14:29:21.423Z"
+    },
+    {
+      "id": 198,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "process_ticket",
+      "ticketId": 63,
+      "detail": "填写处理结果",
+      "createdAt": "2026-06-14T14:29:21.421Z"
+    },
+    {
+      "id": 197,
+      "userId": 5,
+      "userName": "陈师傅",
+      "action": "start_process",
+      "ticketId": 63,
+      "detail": "开始处理工单",
+      "createdAt": "2026-06-14T14:29:21.421Z"
+    },
+    {
+      "id": 196,
+      "userId": 3,
+      "userName": "王调度",
+      "action": "assign_ticket",
+      "ticketId": 63,
+      "detail": "派工给陈师傅",
+      "createdAt": "2026-06-14T14:29:21.410Z"
+    },
+    {
+      "id": 195,
+      "userId": 1,
+      "userName": "张三",
+      "action": "create_ticket",
+      "ticketId": 63,
+      "detail": "提交报修：review-1781447361402",
+      "createdAt": "2026-06-14T14:29:21.404Z"
+    },
     {
       "id": 194,
       "userId": 4,
@@ -2668,8 +2768,8 @@
     }
   ],
   "nextUserId": 8,
-  "nextTicketId": 63,
-  "nextLogId": 195,
+  "nextTicketId": 65,
+  "nextLogId": 203,
   "tokens": {
     "tk_6a5ltkc7p9cmqdaxxcu": 1,
     "tk_8vxgokvi0psmqdb53vm": 1,
@@ -2779,6 +2879,15 @@
     "tk_7gab5dhcvsomqdv2gvg": 7,
     "tk_7mm6uwr54p6mqdv3a3a": 1,
     "tk_w7g0rw5u29mqdv3a4d": 3,
-    "tk_eoaxkzfvj4mqdv3a4m": 4
+    "tk_eoaxkzfvj4mqdv3a4m": 4,
+    "tk_cvygchwpu1mqdvrham": 1,
+    "tk_sgzhugio6hemqdvrhbc": 3,
+    "tk_yeoial8m36mqdvrhbf": 4,
+    "tk_q2csxdch0hpmqdvrhbk": 5,
+    "tk_jo2grb6mkdmqdvrhbo": 7,
+    "tk_vqr4rdn13kmqdvvu87": 1,
+    "tk_u01zwaqc90gmqdvvu8z": 3,
+    "tk_rhfthgpae4mmqdvvu94": 4,
+    "tk_8qdsn901t6kmqdvyhap": 7
   }
 }
