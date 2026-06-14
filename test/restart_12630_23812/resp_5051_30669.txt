@@ -1,0 +1,1 @@
+{"success":true,"data":{"token":"tk_kf07vwi7pvmqdtt3ip","user":{"id":7,"username":"admin","name":"系统管理员","role":"admin","createdAt":"2026-06-14T04:27:42.498Z"}}}

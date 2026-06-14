@@ -1,0 +1,1 @@
+{"success":true,"data":{"token":"tk_xmpm290l1wmqdv2gh3","user":{"id":7,"username":"admin","name":"系统管理员","role":"admin","createdAt":"2026-06-14T04:27:42.498Z"}}}
